@@ -15,15 +15,14 @@
 
 <body>
 
-  <video id="bgVideo" controls playsinline>
+  <video id="bgVideo" autoplay muted loop playsinline>
     <source src="bg.mp4" type="video/mp4">
   </video>
 
-  <button id="bgBtn" type="button"></button>
-<object data="audio.mp3" type="audio/mpeg" width="0" height="0" style="position:absolute; visibility:hidden;">
-  <param name="autoplay" value="true">
-  <param name="loop" value="false">
-</object>
+  <video id="gateAudio" autoplay controls
+    style="position: fixed; top: 20px; right: 20px; width: 200px; height: 40px; z-index: 150; opacity: 0.6; border-radius: 8px;">
+    <source src="audio.mp3" type="audio/mpeg">
+  </video>
 
 
   <script>
@@ -454,7 +453,7 @@
   </div>
   <footer>
     <p>&copy; 2026 AARAV SRIVASTAVA . All Rights Reserved.</p>
-</footer>
+  </footer>
 
 </body>
 
