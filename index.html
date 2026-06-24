@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supercars STORE </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <video id="bgVideo" controls playsinline>
+    <source src="/bg.mp4" type="video/mp4">
+  </video>
+
+  <button id="bgBtn" type="button"></button>
+  <audio id="bgAudio" autoplay>
+    <source src="/audio.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <script>
+    const v = document.getElementById('bgVideo'), b = document.getElementById('bgBtn');
+    b.onclick = () => { v.paused ? v.play() : v.pause() };
+  </script>
+
+  <div id="lock">
+    <form class="lock-box" onsubmit="return false">
+      <h1 style="font: size 45px;">SUPERCARS </h1>
+      <p style="font-size: 30px;"> ACCESS REQUIRED</p>
+      <input id="pwd" type="password" pattern="123" required placeholder="••••" autocomplete="off">
+      <div class="hint" style="font-size: 30px;">STAY ALERT 💀💀</div>
+    </form>
+  </div>
+
+  <div id="site">
+    <nav>
+      <div class="logo">SUPERCARS</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#explore">Explore</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="page">
+      <div class="hero">
+        <h1>UNLEASH THE BEASTS</h1>
+        <p>15 LEGENDARY MACHINES · ZERO LIMITS</p>
+      </div>
+    </section>
+
+    <section id="explore" class="page">
+      <h2 class="explore-title">EXPLORE THE <span> COLLECTION </span></h2>
+      <div class="grid">
+        <a class="car-card" href="#car1"><img src="/p1.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Bugatti Chiron</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car2"><img src="/p2.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Maserati MC12 Corsa</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car3"><img src="/p3.jpg" alt="">
+          <div class="overlay">
+            <div class="label">BMW M4</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car4"><img src="/p4.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Lamborghini Aventador</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car5"><img src="/p5.jpg" alt="">
+          <div class="overlay">
+            <div class="label">McLaren 720S</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car6"><img src="/p6.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Ford GT</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car7"><img src="/p7.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Dodge Viper</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car8"><img src="/p8.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Pininfarina Battista</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car9"><img src="/p9.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Koenigsegg Jesko</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car10"><img src="/p10.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Ferrari 812</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car11"><img src="/p11.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Nissan GT-R R35</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car12"><img src="/p12.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Aston DBS Superleggera</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car13"><img src="/p13.jpg" alt="">
+          <div class="overlay">
+            <div class="label">Audi R8 V10</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car14"><img src="/p14.jpg" alt="">
+          <div class="overlay">
+            <div class="label">BMW M5</div>
+          </div>
+        </a>
+        <a class="car-card" href="#car15"><img src="/p15.jpg" alt="">
+          <div class="overlay">
+            <div class="label" style="text-align: center;">( MACHINE, ONLY FOR COLD HEARTED💀)</div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="car1" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car1.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Bugatti Chiron</h2>
+        <ul class="info">
+          <li>Mighty 8.0L quad-turbo W16 engine</li>
+          <li>1,479 hp of pure French fury</li>
+          <li>Top speed limited to 26 Kmph</li>
+          <li>Carbon-fiber monocoque chassis</li>
+          <li>Limited to just 500 units worldwide</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>261 KMPH</span></div>
+          <div class="spec"><strong>0-60 KMPH</strong><span>2.4 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>8.0L W16</span></div>
+          <div class="spec"><strong>POWER</strong><span>1,479 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car2" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car2.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Maserati MC12 Corsa</h2>
+        <ul class="info">
+          <li>Track-only racing version of the MC12</li>
+          <li>6.0L V12 from the Ferrari Enzo</li>
+          <li>745 hp of pure racing fury</li>
+          <li>Built to dominate FIA GT1 racing</li>
+          <li>Limited to just 12 units worldwide</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>200+ KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>3.2 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>6.0L V12</span></div>
+          <div class="spec"><strong>POWER</strong><span>745 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car3" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car3.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>BMW M4 Competition</h2>
+        <ul class="info">
+          <li>Twin-turbo 3.0L inline-6 engine</li>
+          <li>503 hp German precision machine</li>
+          <li>8-speed M Steptronic gearbox</li>
+          <li>Iconic kidney grille design</li>
+          <li>Track-focused yet daily drivable</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>180 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>3.4 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>3.0L TT I6</span></div>
+          <div class="spec"><strong>POWER</strong><span>503 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car4" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car4.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Lamborghini Aventador</h2>
+        <ul class="info">
+          <li>6.5L naturally-aspirated V12 engine</li>
+          <li>730 hp Italian masterpiece</li>
+          <li>Iconic scissor doors signature</li>
+          <li>Carbon-fiber monocoque chassis</li>
+          <li>Symphony of pure V12 sound</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>217 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>2.9 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>6.5L V12</span></div>
+          <div class="spec"><strong>POWER</strong><span>730 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car5" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car5.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>McLaren 720S</h2>
+        <ul class="info">
+          <li>4.0L twin-turbo V8 engine</li>
+          <li>710 hp British engineering marvel</li>
+          <li>Active aerodynamic body system</li>
+          <li>Dihedral butterfly doors</li>
+          <li>Carbon-fiber MonoCage II chassis</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>212 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>2.7 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>4.0L TT V8</span></div>
+          <div class="spec"><strong>POWER</strong><span>710 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car6" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car6.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Ford GT</h2>
+        <ul class="info">
+          <li>3.5L twin-turbo EcoBoost V6</li>
+          <li>647 hp American muscle reimagined</li>
+          <li>Le Mans winning racing heritage</li>
+          <li>Carbon-fiber body and chassis</li>
+          <li>Active aerodynamic rear wing</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>216 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>3.0 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>3.5L TT V6</span></div>
+          <div class="spec"><strong>POWER</strong><span>647 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car7" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car7.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Dodge Viper SRT</h2>
+        <ul class="info">
+          <li>Massive 8.4L naturally-aspirated V10</li>
+          <li>645 hp of raw American muscle</li>
+          <li>Manual transmission only — no auto</li>
+          <li>No traction control assistance</li>
+          <li>Snake-themed aggressive design</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>206 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>3.4 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>8.4L V10</span></div>
+          <div class="spec"><strong>POWER</strong><span>645 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car8" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car8.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Pininfarina Battista</h2>
+        <ul class="info">
+          <li>Pure electric quad-motor system</li>
+          <li>1,900 hp Italian electric hyperart</li>
+          <li>0-60 Kmph in under 2 seconds</li>
+          <li>Carbon-fiber monocoque body</li>
+          <li>Limited to just 150 units worldwide</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>217 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>1.9 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>Quad Electric</span></div>
+          <div class="spec"><strong>POWER</strong><span>1,900 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car9" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car9.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Koenigsegg Jesko</h2>
+        <ul class="info">
+          <li>5.0L twin-turbo V8 with 1,600 hp</li>
+          <li>9-speed Light Speed Transmission</li>
+          <li>Active rear wing aerodynamics</li>
+          <li>Carbon-fiber monocoque chassis</li>
+          <li>Engineered to chase 300+ mph</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>300+ KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>2.5 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>5.0L TT V8</span></div>
+          <div class="spec"><strong>POWER</strong><span>1,600 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car10" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car10.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Ferrari 812 Superfast</h2>
+        <ul class="info">
+          <li>6.5L naturally-aspirated V12</li>
+          <li>789 hp screaming Italian beast</li>
+          <li>Front mid-engine layout design</li>
+          <li>7-speed dual-clutch gearbox</li>
+          <li>The last front-engined V12 Ferrari</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>211 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>2.9 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>6.5L V12</span></div>
+          <div class="spec"><strong>POWER</strong><span>789 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car11" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car11.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Nissan GT-R R35</h2>
+        <ul class="info">
+          <li>3.8L twin-turbo V6 (VR38DETT)</li>
+          <li>565 hp Japanese performance icon</li>
+          <li>All-wheel drive ATTESA system</li>
+          <li>Hand-built engine in clean room</li>
+          <li>Known as "Godzilla" worldwide</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>196 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>2.9 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>3.8L TT V6</span></div>
+          <div class="spec"><strong>POWER</strong><span>565 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car12" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car12.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Aston Martin DBS Superleggera</h2>
+        <ul class="info">
+          <li>5.2L twin-turbo V12 engine</li>
+          <li>715 hp British grand tourer</li>
+          <li>Carbon-fiber body panels throughout</li>
+          <li>Bond-worthy luxurious interior</li>
+          <li>8-speed automatic transmission</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>211 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>3.4 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>5.2L TT V12</span></div>
+          <div class="spec"><strong>POWER</strong><span>715 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car13" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car13.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>Audi R8 V10 Performance</h2>
+        <ul class="info">
+          <li>5.2L naturally-aspirated V10</li>
+          <li>602 hp German precision engineering</li>
+          <li>Quattro all-wheel drive system</li>
+          <li>Shares platform with Lamborghini Huracán</li>
+          <li>7-speed S tronic transmission</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>205 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>3.1 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>5.2L V10</span></div>
+          <div class="spec"><strong>POWER</strong><span>602 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car14" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car14.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>BMW M5 Competition</h2>
+        <ul class="info">
+          <li>4.4L twin-turbo V8 engine</li>
+          <li>617 hp super sedan from Bavaria</li>
+          <li>M xDrive all-wheel drive system</li>
+          <li>8-speed M Steptronic gearbox</li>
+          <li>Family car that destroys supercars</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>190 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>3.0 s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>4.4L TT V8</span></div>
+          <div class="spec"><strong>POWER</strong><span>617 HP</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="car15" class="detail">
+      <div class="left"><video controls playsinline>
+          <source src="/car15.mp4" type="video/mp4">
+        </video></div>
+      <div class="right"><a class="back-btn" href="#explore">← BACK</a>
+        <h2>SECRET WEAPON( MACHINE, ONLY FOR COLD HEARTED)💀</h2>
+        <ul class="info">
+          <li>0.6L 2-cylinder of pure adrenaline (sometimes)</li>
+          <li>38 horsepower of unbridled fury</li>
+          <li>0-60 KMPH: eventually, with prayers</li>
+          <li>Top speed limited by passenger fear</li>
+          <li>Limited to every Indian driveway</li>
+        </ul>
+        <div class="specs">
+          <div class="spec"><strong>TOP SPEED</strong><span>65 KMPH</span></div>
+          <div class="spec"><strong>0-6 KMPH</strong><span>∞ s</span></div>
+          <div class="spec"><strong>ENGINE</strong><span>0.6L I2</span></div>
+          <div class="spec"><strong>POWER</strong><span>38 HP</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+
+</html>
